@@ -9,7 +9,7 @@ namespace DotNetNuke.Security.Tls12
         {
 
             // Enable TLS 1.2
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12; // .NET 4.5
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12; // .NET 4.5
         }
     }
 }
